@@ -1,0 +1,80 @@
+<html>
+<body>
+<form>
+
+	Enter your name:<input type="text" id="uname"><br><br>
+	Enter your employee id:<input type="text" id="emp"><br><br>
+	Select the events:<br>
+	Indoor events:<input type="radio" id="in" name="events" value="indoor events"><select>
+		<option value=""></option>
+		<option value="table tennis">Table tennis</option>
+		<option value="carom">Carom</option>
+		<option value="chess">Chess</option></select>
+		<button id="reg" name="register" disabled onchange="fn()" onclick="alert()">Register</button><br>
+		
+	Outdoor events:<input type="radio" id="out" name="events" value="outdoor events"><Select>
+		<option value=""></option>
+		<option value="cricket">Cricket</option>
+		<option value="badminton">Badminton</option>
+		<option value="volley ball">Volley ball</option></select>
+		<button id="reg1" name="register" disabled onchange="fn()" onclick="alert()" >Register</button><br>
+
+</form>		
+<script>
+
+
+function fn()
+{
+var a=document.getElementById("reg").value;
+if(radio.value="")
+{
+document.getElementById("reg").disabled=false;
+}
+else	
+{
+document.getElementById("reg").disabled=true;
+}
+}
+
+function fun()
+{
+var b=document.getElementById("reg1").value;
+if(radio.value=="")
+{
+document.getElementById("reg1").disabled=false;
+}
+else	
+{
+document.getElementById("reg1").disabled=true;
+}
+}
+
+function alert()
+{
+var c=document.getElementById("alert").value;
+if(events.checked(3))
+{    
+alert("You have registered for three events successfully");
+}
+
+function alert1()
+{
+alert("You have registered two indoor activity. Please select an activity from outdoor category");
+}
+
+function alert2()
+{
+alert("You have registered for three events successfully");
+}
+	
+</script>
+</body>
+</html>
+  
+
+	
+	
+	
+
+
+
